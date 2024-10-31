@@ -1,45 +1,116 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #eee7de;
-    color: #2f323b;
+    margin: 0;
+    padding: 0;
 }
 
 header {
-    display: flex; 
-    align-items: center; 
-    background-color: #857081;
-    color: #f6f4ef; 
-    padding: 30px; 
-    text-align: center; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #eed6db;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
 }
 
 .logo {
-    height: 80px; 
-    margin-right: 80px; 
-}
-
-.header-title {
-    margin: 0; 
-    display: inline; 
+    width: 80px;
+    height: auto;
+    margin-right: 20px;
 }
 
 nav ul {
-    list-style-type: none; 
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 nav ul li {
-    display: inline; 
-    margin: 30px; 
+    display: inline;
+    margin-right: 15px;
 }
 
-nav a {
-    color: #f6f4ef; 
-    text-decoration: none; 
+nav ul li a {
+    text-decoration: none;
+    color: #885111;
+    padding: 5px 10px;
+    transition: background-color 0.3s;
 }
 
-section {
-    background-color: #f6f4ef; 
+nav ul li a:hover {
+    background-color: #857081;
+}
+h1 {
+    color: #885111; 
+}
+h2 {
+    color: #885111; 
+}
+
+.home-section {
+    background-color: #eee7de;
+    color: #885111;
+    text-align: center;
+    padding: 100px 20px;
+    margin-top: 60px; /* Отступ для фиксированной шапки */
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
     padding: 20px;
-    margin: 20px; 
-    border-radius: 5px; 
+    color: #885111;
+    background-color: #eee7de; /* Цвет фона секции "О нас" */
+    text-align: center; /* Центрирование текста в секции */
+    padding: 20px 20px; /* Отступы сверху и снизу */
 }
+
+
+.about-content img {
+    max-width: 400px; 
+    margin-right: 200px; 
+}
+
+.projects-cards {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.card {
+    background-color: #eee7de;
+    border: 1px solid #885111;
+    border-radius: 8px;
+    padding: 20px;
+    width: 30%; 
+    text-align: center;
+    color: #844225
+}
+
+#contact {
+    text-align: center; 
+    padding: 60px 20px; 
+    background-color: #eee7de; 
+}
+
+.contact-info p {
+    color: #885111; 
+    margin: 10px 0; 
+}
+
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #f8f8f8;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
